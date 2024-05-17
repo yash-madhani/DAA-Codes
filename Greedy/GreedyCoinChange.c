@@ -1,10 +1,9 @@
 #include<stdio.h>
-
 int main()
 {
     int Denominations[4] = {1,2,25,40};
     int n=4,temp,amt=50;
-
+    // sorting in decreasing order
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n-i-1;j++)
@@ -17,7 +16,7 @@ int main()
             }
         }
     }
-
+    // printing the selected coins
     for(int i=0;i<n;i++)
     {
         while(Denominations[i] <= amt)
